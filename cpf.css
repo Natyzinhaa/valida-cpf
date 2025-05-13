@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(160, 79, 3);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-container {
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.form-container input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
