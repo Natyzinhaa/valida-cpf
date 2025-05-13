@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: rgb(160, 79, 3);
+    background-color: rgb(214, 104, 0);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -21,4 +21,14 @@ body {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
+}
+
+.form-container button {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(99, 67, 0);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
