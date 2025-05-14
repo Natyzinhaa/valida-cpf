@@ -1,7 +1,7 @@
 function validarCPF(cpf) {
     cpf = cpf.replace(/[^\d]+/g, "");
 
-    if(cpf.lengt !== 11 || /^(\d)\1+$/.test(cpf)) {
+    if(cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) {
         return false;
     }
 
@@ -41,3 +41,18 @@ function validarCPF(cpf) {
     return true;
 }
 
+document.getElementById("cpfForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const cpfInput = document.getElementById("cpf").value;
+    const messageDiv = document.getElementById("message");
+
+    if(validarCPF(cpfInput)) {
+        messageDiv.textContent = "CPF Válido";
+        messageDiv.className = "message success";
+    } else {
+        messageDiv.textContent = "CPF Inválido";
+        messageDiv.className = "message error";
+    }
+
+    messageDiv.style.display = "block";
+});
